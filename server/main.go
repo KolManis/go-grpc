@@ -16,6 +16,9 @@ type helloServer struct {
 	pb.GreetServiceServer
 }
 
+//go run $(Get-ChildItem -Filter *.go -Name)
+//go run *.go
+
 func main() {
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
